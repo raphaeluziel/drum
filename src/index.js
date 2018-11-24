@@ -11,13 +11,15 @@ const audioClipSources = [
 "https://www.raphaeluziel.com/sounds/explosion.wav",
 "https://www.raphaeluziel.com/sounds/meow.wav",
 "https://www.raphaeluziel.com/sounds/ouch.wav",
-"https://www.raphaeluziel.com/sounds/yikes.wav"]
+"https://www.raphaeluziel.com/sounds/yikes.wav"];
 
-const soundNames = ["piano", "baby", "collision", "ding", "dog", "explosion", "meow", "ouch", "yikes"]
+const soundNames = ["piano", "baby", "collision", "ding", "dog", "explosion", "meow", "ouch", "yikes"];
 
-const letters = ["Q", "W", "E", "A", "S", "D", "Z", "X", "C"]
+const letters = ["Q", "W", "E", "A", "S", "D", "Z", "X", "C"];
 
-var volume = 0.5
+var volume = 0.5;
+var slider;
+var output;
 
 class DrumPad extends React.Component {
   constructor(props){
@@ -56,8 +58,8 @@ class DrumMachine extends React.Component {
   }
   componentDidMount() {
     // Set slider to default value on load
-    var slider = document.getElementById("volume");
-    var output = document.getElementById("showVolume");
+    slider = document.getElementById("volume");
+    output = document.getElementById("showVolume");
     output.innerHTML = slider.value; // Display the default slider value
 
     // Check if key was pressed
