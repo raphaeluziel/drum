@@ -1,3 +1,7 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+
 const audioClipSources = [
 "https://www.raphaeluziel.com/sounds/piano.wav",
 "https://www.raphaeluziel.com/sounds/baby.wav",
